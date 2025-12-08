@@ -110,7 +110,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-unit);
-    margin-bottom: var(--spacing-unit); /* Ajout d'espace sous le formulaire avant les liens */
+    margin-bottom: var(--spacing-unit);
 }
 
 label {
