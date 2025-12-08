@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,7 +15,8 @@
     </header>
     <main>
         <div>
-            <input type="text" id="recherche" name="recherhce" placeholder="Recherche"/>
+            <input type="text" id="recherche" name="recherche" placeholder="Recherche" aria-labelledby="rechercheDescription"/>
+            <p id="rechercheDescription">Saisir une ou plusieurs information sur le trajet souhaité</p>
             <select name="filtrePlace" id="filtrePlace">
                 <option value="">Siège</option>
                 <option value="valeur1">1</option>
