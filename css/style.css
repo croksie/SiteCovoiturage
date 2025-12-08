@@ -1,16 +1,16 @@
 /* Définition des variables de couleur et de taille */
 :root {
-    --primary-color: #007bff; /* Bleu vif pour les éléments principaux */
-    --secondary-color: #28a745; /* Vert pour l'action secondaire (comme 'créer un compte') */
-    --background-color: #f8f9fa; /* Arrière-plan très clair */
-    --card-background: #ffffff; /* Fond de la carte/boîte */
-    --text-color: #343a40; /* Texte principal sombre */
-    --light-text-color: #6c757d; /* Texte secondaire/léger */
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #343a40;
+    --light-text-color: #6c757d;
     --border-radius: 8px;
-    --spacing-unit: 1rem; /* 16px */
+    --spacing-unit: 1rem;
 }
 
-/* --- Base et mise en page générale --- */
+/* --- Base et mise en page générale (inchangé) --- */
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -20,29 +20,32 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* S'assure que le pied de page reste en bas */
+    min-height: 100vh;
     line-height: 1.6;
 }
 
 main {
-    flex-grow: 1; /* Prend l'espace disponible */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrage vertical du contenu principal */
-    align-items: center; /* Centrage horizontal du contenu principal */
+    justify-content: center;
+    align-items: center;
     padding: var(--spacing-unit);
 }
 
-/* --- Conteneur du formulaire (le div qui englobe form et buttons) --- */
+/* --- Conteneur du formulaire (inchangé) --- */
 
 main > div {
     background-color: var(--card-background);
     padding: calc(var(--spacing-unit) * 1.5);
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce */
-    width: 90%; /* Prend 90% de la largeur sur mobile */
-    max-width: 400px; /* Limite la largeur sur les grands écrans */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
     margin-top: calc(var(--spacing-unit) * 2);
+    /* Ajout d'une flexbox pour mieux gérer l'espacement des liens */
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -52,12 +55,13 @@ h1 {
     font-size: 2rem;
 }
 
-/* --- Formulaire et ses éléments --- */
+/* --- Formulaire et ses éléments (inchangé) --- */
 
 form {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-unit); /* Espace entre les groupes label/input */
+    gap: var(--spacing-unit);
+    margin-bottom: var(--spacing-unit); /* Ajout d'espace sous le formulaire avant les liens */
 }
 
 label {
@@ -75,7 +79,7 @@ input[type="password"] {
     margin-bottom: 0.5rem;
     border: 1px solid #ced4da;
     border-radius: var(--border-radius);
-    box-sizing: border-box; /* Assure que le padding n'augmente pas la largeur totale */
+    box-sizing: border-box;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -87,9 +91,9 @@ input[type="password"]:focus {
     outline: none;
 }
 
-/* --- Boutons --- */
+/* --- Style des liens <a> en tant que boutons --- */
 
-button {
+a.button {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -99,32 +103,15 @@ button {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
+    text-decoration: none; /* Enlève le soulignement par défaut des liens */
     transition: background-color 0.3s, opacity 0.3s;
+    box-sizing: border-box;
 }
 
-/* Bouton principal (action de connexion implicite, même s'il n'y en a pas un ici) */
-/* Utilisation de la couleur primaire pour le bouton 'Mot de passe perdu' ou le premier bouton */
-main > div > button:nth-of-type(1) {
-    background-color: var(--primary-color);
-    color: white;
-}
 
-main > div > button:nth-of-type(1):hover {
-    background-color: #0056b3; /* Un bleu légèrement plus foncé au survol */
-}
 
-/* Bouton secondaire (par exemple, "Je n'ai pas de compte") */
-main > div > button:nth-of-type(2) {
-    background-color: var(--secondary-color);
-    color: white;
-    margin-top: 0.75rem; /* Réduire l'espacement pour plus de cohésion */
-}
 
-main > div > button:nth-of-type(2):hover {
-    background-color: #1e7e34; /* Un vert légèrement plus foncé au survol */
-}
-
-/* --- Pied de page (Footer) --- */
+/* --- Pied de page (Footer) (inchangé) --- */
 
 footer {
     text-align: center;
