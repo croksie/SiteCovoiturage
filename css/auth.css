@@ -1,20 +1,4 @@
-
-
-a.button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    margin-top: var(--spacing-unit);
-    border: none;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s, opacity 0.3s;
-    box-sizing: border-box;
-}
-
+/* Déprécier */
 
 #aMdp {
     background-color: var(--primary-color);
@@ -34,3 +18,4 @@ a.button {
 #aCompte:hover {
     background-color: #1e7e34;
 }
+
