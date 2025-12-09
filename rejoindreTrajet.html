@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rejoindre un trajet</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
         <h1>Rejoindre un trajet</h1>
+
+        <h4>* Indique une réponse obligatoire</h4>
 
         <label for="radioAllerRejoindre">Aller</label>
         <input type="radio" id="radioAllerRejoindre" name="allerRetourRejoindre" value="aller" checked disabled/>
@@ -16,13 +18,13 @@
         <label for="radioRetourRejoindre">Retour</label>
         <input type="radio" id="radioRetourRejoindre" name="allerRetourRejoindre" value="retour" disabled/>
 
-        <label for="inputRdvRejoindre">Point de rendez-vous</label>
+        <label for="inputRdvRejoindre">Point de rendez-vous *</label>
         <input type="text" id="inputRdvRejoindre" name="rdvRejoindre" required disabled placeholder="{point de rendez-vous}"/>
 
-        <label for="inputDateHeureRejoindre">Date/Heure</label>
+        <label for="inputDateHeureRejoindre">Date/Heure *</label>
         <input type="datetime-local" id="inputDateHeureRejoindre" name="DateHeureRejoindre" required disabled/>
 
-        <label for="inputPlaceDispoRejoindre">Nombre de places disponible</label>
+        <label for="inputPlaceDispoRejoindre">Nombre de places disponible *</label>
         <input type="text" id="inputPlaceDispoRejoindre" name="placeDispoRejoindre" required disabled placeholder="{nombre de places disponible}"/>       
 
         <a href="index.html" class="button">Rejoindre</a>
