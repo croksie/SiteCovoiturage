@@ -12,8 +12,9 @@
 
 a.button {
     color: var(--fond-des-cartes);
-    display: block;
-    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem 2rem 0.2rem 2rem;
     border-radius: 2rem;
     margin: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--couleur-primaire);
