@@ -234,24 +234,3 @@ input[type="datetime-local"]:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     outline: none;
 }
-
-
-
-
-
-
-/* Boutons liens */
-
-a.button {
-    color: var(--fond-des-cartes);
-    display: block;
-    padding: 0.2rem;
-    border-radius: 2rem;
-    margin: 0.5rem 1rem 0.5rem 1rem;
-    background-color: var(--couleur-primaire);
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;    
-    text-decoration: none;
-    box-sizing: border-box;
-}

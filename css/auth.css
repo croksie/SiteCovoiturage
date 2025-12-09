@@ -19,3 +19,7 @@
     background-color: #1e7e34;
 }
 
+a.button {
+    display: flex;
+    justify-content: center;
+}
