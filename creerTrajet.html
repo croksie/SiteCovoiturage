@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un trajet</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/trajet.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./images/logo.png" alt="">
+            <Span>Covoit'Info@Castres</Span>
+        </div>
+    </header>
+    <main>    
+        <h1>Créer un trajet</h1>   
+        
+        <div class="carte">
+            <h4>* Indique une réponse obligatoire</h4>
+
+            <form action="index.html">
+                <div class="radio">                    
+                    <input type="radio" id="radioAllerCreer" class="radioAller" name="allerRetourCreer" value="aller" checked />
+                    <label for="radioAllerCreer">Aller</label>
+                    
+                    <input type="radio" id="radioRetourCreer" class="radioRetour" name="allerRetourCreer" value="retour" />
+                    <label for="radioRetourCreer">Retour</label>
+                </div>
+
+                <label for="inputRdvCreer">Point de rendez-vous *</label>
+                <input type="text" id="inputRdvCreer" name="rdvCreer" required />
+            
+                <label for="inputDateHeureCreer">Date/Heure *</label>
+                <input type="datetime-local" id="inputDateHeureCreer" name="dateHeureCreer" value="2025-12-01T12:00" required />
+                
+                <label for="inputPlaceDispoCreer">Nombre de places disponible *</label>
+                <input type="text" id="inputPlaceDispoCreer" name="placeDispoCreer" required />        
+
+                <input type="submit" value="Créer le trajet"></input>
+            </form>           
+
+            <a href="index.html" class="button">Retour</a>   
+        </div>
+    </main>
+    <footer>Covoit'Info@Castres ©2025. Tout droits réservé</footer>
+</body>
+</html>

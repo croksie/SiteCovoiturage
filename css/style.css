@@ -1,3 +1,7 @@
+/*
+    STYLE PRINCIPALE DE LA PAGE 
+*/
+
 /* Définition des variables */
 :root {
     --couleur-primaire: #0f9c22;
@@ -25,6 +29,8 @@ body {
     line-height: 1.6;
 }
 
+/* ---------------------- */
+
 main {
     flex-grow: 1;
     display: flex;
@@ -33,6 +39,8 @@ main {
     align-items: center;
     padding: var(--espace);
 }
+
+/* ---------------------- */
 
 header {
     z-index: 1000;
@@ -44,6 +52,19 @@ header {
     align-items: center;
     padding: var(--spacing-unit);
     width: 100%;
+}
+
+/* Contenue interne de l'header */
+header > img {
+    height: 50px;
+}
+.header-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 header > div {
@@ -70,6 +91,8 @@ header > div > span {
     margin-bottom: 0; 
 }
 
+/* ---------------------- */
+
 nav {
     display: flex;
     flex-direction: row;
@@ -79,20 +102,7 @@ nav {
     align-items: stretch;
 }
 
-/* Contenue interne de l'header */
-header > img {
-    height: 50px;
-}
-.header-inner {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-
+/* ---------------------- */
 
 footer {
     text-align: center;
@@ -102,6 +112,8 @@ footer {
     font-size: 0.85rem;
     border-top: 1px solid #e9ecef;
 }
+
+/* ---------------------- */
 
 .logo {
     display: inline-flex;
@@ -113,16 +125,15 @@ footer {
     font-size: 1.05rem;
 }
 
-
-/* other */
+/* autre */
 
 .carte {
     background-color: var(--fond-des-cartes);
-    padding: calc(var(--espace) * 1.5);
+    padding: 1.2rem;
     border-radius: var(--taille-bordure);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
-  
+    margin: 0.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -136,29 +147,9 @@ h1 {
 
 ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.trajet {
-    background-color: var(--fond-des-cartes);
-    padding: var(--espace);
-    border-radius: var(--taille-bordure);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0rem;
+    margin: 0rem;
     width: 90%;
-    margin-top: var(--espace);
-    display: flex;
-    flex-direction: column;
-}
-
-.filtres {
-    display: flex;
-    gap: var(--espace);
-    margin-bottom: var(--espace);
-    justify-content: center;
-    width: 100%;
-    flex-direction: row;
 }
 
 /* Formulaire */
@@ -181,8 +172,7 @@ label {
 .radio{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 
 input[type="email"],

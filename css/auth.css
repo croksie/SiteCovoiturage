@@ -1,23 +1,6 @@
-/* Déprécier */
-
-#aMdp {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-#aMdp:hover {
-    background-color: #0056b3;
-}
-
-#aCompte {
-    background-color: var(--secondary-color);
-    color: white;
-    margin-top: 0.75rem;
-}
-
-#aCompte:hover {
-    background-color: #1e7e34;
-}
+/*
+    STYLE DES PAGES CONNEXION / INSCRIPTION ET RESET MDP
+*/
 
 a.button {
     display: flex;

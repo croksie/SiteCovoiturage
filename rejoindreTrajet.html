@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejoindre un trajet</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/trajet.css">
 </head>
 <body>
     <header>
@@ -12,34 +13,36 @@
             <img src="./images/logo.png" alt="">
             <Span>Covoit'Info@Castres</Span>
         </div>
-        <nav>
-            <a href="creeTrajet.html" class="button">Créer</a>
-            <a href="gestionTrajet.html" class="button">Gérer</a>
-        </nav>
     </header>
     <main>
         <h1>Rejoindre un trajet</h1>
 
-        <h4>* Indique une réponse obligatoire</h4>
+        <div class="carte">
+            <h4>* Indique une réponse obligatoire</h4>
 
-        <label for="radioAllerRejoindre">Aller</label>
-        <input type="radio" id="radioAllerRejoindre" name="allerRetourRejoindre" value="aller" checked disabled/>
+            <form action="index.html">
+                <div class="radio">                    
+                    <input type="radio" id="radioAllerRejoindre" class="radioAller" name="allerRetourRejoindre" value="aller" checked disabled/>
+                    <label for="radioAllerRejoindre">Aller</label>
+                    
+                    <input type="radio" id="radioRetourRejoindre" class="radioRetour" name="allerRetourRejoindre" value="retour" disabled/>
+                    <label for="radioRetourRejoindre">Retour</label>
+                </div>                
 
-        <label for="radioRetourRejoindre">Retour</label>
-        <input type="radio" id="radioRetourRejoindre" name="allerRetourRejoindre" value="retour" disabled/>
+                <label for="inputRdvRejoindre">Point de rendez-vous *</label>
+                <input type="text" id="inputRdvRejoindre" name="rdvRejoindre" required disabled placeholder="{point de rendez-vous}"/>
 
-        <label for="inputRdvRejoindre">Point de rendez-vous *</label>
-        <input type="text" id="inputRdvRejoindre" name="rdvRejoindre" required disabled placeholder="{point de rendez-vous}"/>
+                <label for="inputDateHeureRejoindre">Date/Heure *</label>
+                <input type="datetime-local" id="inputDateHeureRejoindre" name="DateHeureRejoindre" value="2025-12-01T12:00" required disabled/>
 
-        <label for="inputDateHeureRejoindre">Date/Heure *</label>
-        <input type="datetime-local" id="inputDateHeureRejoindre" name="DateHeureRejoindre" value="2025-12-01T12:00" required disabled/>
+                <label for="inputPlaceDispoRejoindre">Nombre de places disponible *</label>
+                <input type="text" id="inputPlaceDispoRejoindre" name="placeDispoRejoindre" required disabled placeholder="{nombre de places disponible}"/>       
 
-        <label for="inputPlaceDispoRejoindre">Nombre de places disponible *</label>
-        <input type="text" id="inputPlaceDispoRejoindre" name="placeDispoRejoindre" required disabled placeholder="{nombre de places disponible}"/>       
+                <input type="submit" value="Rejoindre">
+            </form>
 
-        <input type="submit" value="Rejoindre"><a href="index.html"></a>
-
-         <a href="index.html">Retour</a>
+            <a href="index.html" class="button">Retour</a>
+        </div>      
     </main>
     <footer>Covoit'Info@Castres ©2025. Tout droits réservé</footer>
 </body>

@@ -1,3 +1,7 @@
+/*
+    STYLE DE LA PAGE INDEX (ACCUEIL)
+*/
+
 /* Définition des variables */
 :root {
     --couleur-primaire: #0f9c22;
@@ -11,13 +15,13 @@
 }
 
 
-a.button {
+nav > a.button {
     color: var(--fond-des-cartes);
     display: flex;
     justify-content: space-between;
-    padding: 0.2rem 2rem 0.2rem 2rem;
+    padding: 0.2rem 2rem;
     border-radius: 2rem;
-    margin: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem 1rem;
     background-color: var(--couleur-primaire);
     font-size: 1rem;
     cursor: pointer;
@@ -33,21 +37,30 @@ a.button {
 }
 
 .trajet {
-    background-color: var(--fond-des-cartes);
-    padding: var(--espace);
+    background-color: rgba(50, 50, 50, 0.2);
+    padding: 0.5rem;
     border-radius: var(--taille-bordure);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
     margin-top: var(--espace);
-    display: flex;
-    flex-direction: column;
 }
 
-.filtres {
+.trajet > a{
+    outline: none;
+    text-decoration: none;
+    color: var(--couleur-du-texte);
+}
+
+.filtres{
     display: flex;
-    gap: var(--espace);
-    margin-bottom: var(--espace);
-    justify-content: center;
-    width: 100%;
-    flex-direction: row;
+    justify-content: space-around;
+}
+
+select,
+select::picker(select) {
+    appearance: base-select;
+    color: var(--couleur-primaire);
+    border-radius: var(--taille-bordure);
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    width: 50%;
+    margin: 0.2rem;
 }
