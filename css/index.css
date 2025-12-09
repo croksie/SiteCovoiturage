@@ -1,3 +1,29 @@
+/* Définition des variables */
+:root {
+    --couleur-primaire: #0f9c22;
+    --couleur-secondaire: #ece578fd;
+    --couleur-de-fond: #f8f9fa;
+    --fond-des-cartes: #ffffff;
+    --couleur-du-texte: #343a40;
+    --couleur-du-texte-clair: #6c757d;
+    --taille-bordure: 8px;
+    --espace: 1rem;
+}
+
+a.button {
+    color: var(--fond-des-cartes);
+    display: block;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    background-color: var(--couleur-primaire);
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;    
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 #recherche{
     display: flex;
     flex-direction: column;
@@ -5,20 +31,20 @@
 }
 
 .trajet {
-    background-color: var(--card-background);
-    padding: var(--spacing-unit);
-    border-radius: var(--border-radius);
+    background-color: var(--fond-des-cartes);
+    padding: var(--espace);
+    border-radius: var(--taille-bordure);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
-    margin-top: var(--spacing-unit);
+    margin-top: var(--espace);
     display: flex;
     flex-direction: column;
 }
 
 .filtres {
     display: flex;
-    gap: var(--spacing-unit);
-    margin-bottom: var(--spacing-unit);
+    gap: var(--espace);
+    margin-bottom: var(--espace);
     justify-content: center;
     width: 100%;
     flex-direction: row;
