@@ -10,10 +10,11 @@
     --espace: 1rem;
 }
 
+
 a.button {
     color: var(--fond-des-cartes);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0.2rem 2rem 0.2rem 2rem;
     border-radius: 2rem;
     margin: 0.5rem 1rem 0.5rem 1rem;

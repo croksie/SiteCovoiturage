@@ -73,6 +73,7 @@ header > div > span {
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     gap: var(--spacing-unit);
     align-items: stretch;
