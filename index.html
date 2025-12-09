@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Accueil - Covoit'Info@Castres</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -16,9 +16,8 @@
     </header>
     <main>
         <div>
-            <input type="text" id="recherche" name="recherche" placeholder="Recherche" aria-labelledby="rechercheDescription"/>
-            <p id="rechercheDescription">Saisir une ou plusieurs information sur le trajet souhaité</p>
-            <select name="filtrePlace" id="filtrePlace">
+            <input type="text" id="recherche" name="recherche" placeholder="Recherche" title="Saisir une ou plusieurs information sur le trajet souhaité, place disponible, horaire, direction (aller / retour)"/>
+            <select name="filtrePlace" id="filtrePlace" title="Filtrer les trajets par nombre de place disponible">
                 <option value="">Siège</option>
                 <option value="valeur1">1</option>
                 <option value="valeur2">2
@@ -26,7 +25,7 @@
                 <option value="valeur4">> 4</option>
             </select>
 
-            <select name="filtreHoraire" id="filtreHoraire">
+            <select name="filtreHoraire" id="filtreHoraire" title="Filtrer les trajets par horaire">
                 <option value="">Horaire</option>
                 <option value="valeur1">&lt; 9h</option>
                 <option value="valeur2">9-12h</option>
