@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +10,21 @@
     <main>    
         <h1>Créer un trajet</h1>   
 
+        <h4>* Indique une réponse obligatoire</h4>
+
         <label for="radioAllerCréer">Aller</label>
         <input type="radio" id="radioAllerCréer" name="allerRetourCréer" value="aller" checked />
         
         <label for="radioRetourCréer">Retour</label>
         <input type="radio" id="radioRetourCréer" name="allerRetourCréer" value="retour" />
         
-        <label for="inputRdvCréer">Point de rendez-vous</label>
+        <label for="inputRdvCréer">Point de rendez-vous *</label>
         <input type="text" id="inputRdvCréer" name="rdvCréer" required />
        
-        <label for="inputDateHeureCréer">Date/Heure</label>
+        <label for="inputDateHeureCréer">Date/Heure *</label>
         <input type="datetime-local" id="inputDateHeureCréer" name="dateHeureCréer" required />
         
-        <label for="inputPlaceDispoCréer">Nombre de places disponible</label>
+        <label for="inputPlaceDispoCréer">Nombre de places disponible *</label>
         <input type="text" id="inputPlaceDispoCréer" name="placeDispoCréer" required />        
 
         <input type="submit" value="Créer le trajet"></input>
