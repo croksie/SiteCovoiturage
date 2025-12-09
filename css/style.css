@@ -103,6 +103,24 @@ h1 {
     font-size: 2rem;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.trajet {
+    background-color: var(--card-background);
+    padding: var(--spacing-unit);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: var(--spacing-unit);
+    display: flex;
+    flex-direction: column;
+}
+
 /* Formulaire */
 
 form {
@@ -151,6 +169,10 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s, opacity 0.3s;
 }
+
+
+
+
 
 
 /* Boutons liens */
