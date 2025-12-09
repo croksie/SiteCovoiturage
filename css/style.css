@@ -36,14 +36,44 @@ main {
 
 header {
     z-index: 1000;
-    height: 64px;
-    background-color: var(--fond-des-cartes);
+    height: auto; /* Permet à la hauteur de s'adapter lorsque les boutons passent à la ligne */
+    background-color: var(--card-background);
     border-bottom: 1px solid #e9ecef;
     display: flex;
-    align-items: center;
-    padding: 0 var(--espace);
+    flex-direction: column; /* Par défaut en colonne pour maximiser la largeur sur mobile */
+    align-items: center; /* Centre le contenu en mode colonne */
+    padding: var(--spacing-unit); /* Augmentation du padding pour l'esthétique */
     width: 100%;
+}
 
+header > div > img {
+    height: 50px;
+    margin-bottom: 0.5rem; /* Ajout d'un espacement sous le logo */
+    margin-left: 0%;
+}
+
+header > span {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-unit);
+}
+
+header > div {
+    display: flex;
+    flex-direction: row; /* Par défaut, les boutons sont empilés */
+    width: 100%; /* Les boutons prennent toute la largeur du header */
+    gap: var(--spacing-unit); /* Espacement entre les boutons */
+    align-items: center; /* Les boutons s'étendent pour remplir la largeur */
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; /* Par défaut, les boutons sont empilés */
+    width: 100%; /* Les boutons prennent toute la largeur du header */
+    gap: var(--spacing-unit); /* Espacement entre les boutons */
+    align-items: stretch; /* Les boutons s'étendent pour remplir la largeur */
 }
 
 /* Contenue interne de l'header */
@@ -60,13 +90,6 @@ header > img {
 }
 
 
-
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 
 footer {
     text-align: center;
