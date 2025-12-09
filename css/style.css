@@ -36,44 +36,46 @@ main {
 
 header {
     z-index: 1000;
-    height: auto; /* Permet à la hauteur de s'adapter lorsque les boutons passent à la ligne */
+    height: auto;
     background-color: var(--card-background);
     border-bottom: 1px solid #e9ecef;
     display: flex;
-    flex-direction: column; /* Par défaut en colonne pour maximiser la largeur sur mobile */
-    align-items: center; /* Centre le contenu en mode colonne */
-    padding: var(--spacing-unit); /* Augmentation du padding pour l'esthétique */
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-unit);
     width: 100%;
-}
-
-header > div > img {
-    height: 50px;
-    margin-bottom: 0.5rem; /* Ajout d'un espacement sous le logo */
-    margin-left: 0%;
-}
-
-header > span {
-    font-weight: 700;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    margin-bottom: var(--spacing-unit);
 }
 
 header > div {
     display: flex;
-    flex-direction: row; /* Par défaut, les boutons sont empilés */
-    width: 100%; /* Les boutons prennent toute la largeur du header */
-    gap: var(--spacing-unit); /* Espacement entre les boutons */
-    align-items: center; /* Les boutons s'étendent pour remplir la largeur */
-    justify-content: center;
+    flex-direction: row; 
+    width: 100%; 
+    gap: var(--spacing-unit);
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header > div > img {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+
+header > div > span {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-bottom: 0; 
 }
 
 nav {
     display: flex;
-    flex-direction: row; /* Par défaut, les boutons sont empilés */
-    width: 100%; /* Les boutons prennent toute la largeur du header */
-    gap: var(--spacing-unit); /* Espacement entre les boutons */
-    align-items: stretch; /* Les boutons s'étendent pour remplir la largeur */
+    flex-direction: row;
+    width: 100%;
+    gap: var(--spacing-unit);
+    align-items: stretch;
 }
 
 /* Contenue interne de l'header */
