@@ -1,13 +1,13 @@
 /* Définition des variables */
 :root {
-    --primary-color: #0f9c22;
-    --secondary-color: #ece578fd;
-    --background-color: #f8f9fa;
-    --card-background: #ffffff;
-    --text-color: #343a40;
-    --light-text-color: #6c757d;
-    --border-radius: 8px;
-    --spacing-unit: 1rem;
+    --couleur-primaire: #0f9c22;
+    --couleur-secondaire: #ece578fd;
+    --couleur-de-fond: #f8f9fa;
+    --fond-des-cartes: #ffffff;
+    --couleur-du-texte: #343a40;
+    --couleur-du-texte-clair: #6c757d;
+    --taille-bordure: 8px;
+    --espace: 1rem;
 }
 
 
@@ -15,8 +15,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--couleur-de-fond);
+    color: var(--couleur-du-texte);
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,22 +31,25 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing-unit);
+    padding: var(--espace);
 }
 
 header {
     z-index: 1000;
     height: 64px;
-    background-color: var(--card-background);
+    background-color: var(--fond-des-cartes);
     border-bottom: 1px solid #e9ecef;
     display: flex;
     align-items: center;
-    padding: 0 var(--spacing-unit);
+    padding: 0 var(--espace);
     width: 100%;
 
 }
 
 /* Contenue interne de l'header */
+header > img {
+    height: 50px;
+}
 .header-inner {
     width: 100%;
     max-width: 1200px;
@@ -57,6 +60,8 @@ header {
 }
 
 
+
+
 nav {
     display: flex;
     align-items: center;
@@ -65,9 +70,9 @@ nav {
 
 footer {
     text-align: center;
-    padding: var(--spacing-unit);
-    background-color: var(--card-background);
-    color: var(--light-text-color);
+    padding: var(--espace);
+    background-color: var(--fond-des-cartes);
+    color: var(--couleur-du-texte-clair);
     font-size: 0.85rem;
     border-top: 1px solid #e9ecef;
 }
@@ -77,7 +82,7 @@ footer {
     align-items: center;
     gap: 0.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--couleur-primaire);
     text-decoration: none;
     font-size: 1.05rem;
 }
@@ -86,20 +91,20 @@ footer {
 /* other */
 
 main > div {
-    background-color: var(--card-background);
-    padding: calc(var(--spacing-unit) * 1.5);
-    border-radius: var(--border-radius);
+    background-color: var(--fond-des-cartes);
+    padding: calc(var(--espace) * 1.5);
+    border-radius: var(--taille-bordure);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
-    margin-top: calc(var(--spacing-unit) * 2);
+  
     display: flex;
     flex-direction: column;
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--couleur-primaire);
     text-align: center;
-    margin-bottom: var(--spacing-unit);
+
     font-size: 2rem;
 }
 
@@ -111,20 +116,20 @@ ul {
 }
 
 .trajet {
-    background-color: var(--card-background);
-    padding: var(--spacing-unit);
-    border-radius: var(--border-radius);
+    background-color: var(--fond-des-cartes);
+    padding: var(--espace);
+    border-radius: var(--taille-bordure);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
-    margin-top: var(--spacing-unit);
+    margin-top: var(--espace);
     display: flex;
     flex-direction: column;
 }
 
 .filtres {
     display: flex;
-    gap: var(--spacing-unit);
-    margin-bottom: var(--spacing-unit);
+    gap: var(--espace);
+    margin-bottom: var(--espace);
     justify-content: center;
     width: 100%;
     flex-direction: row;
@@ -135,15 +140,15 @@ ul {
 form {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-unit);
-    margin-bottom: var(--spacing-unit);
+    gap: var(--espace);
+    margin-bottom: var(--espace);
 }
 
 label {
     display: block;
     margin-bottom: 0.25rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--couleur-du-texte);
     font-size: 0.95rem;
 }
 
@@ -154,7 +159,7 @@ input[type="text"] {
     padding: 0.75rem;
     margin-bottom: 0.5rem;
     border: 1px solid #ced4da;
-    border-radius: var(--border-radius);
+    background-color: var(--taille-bordure);
     box-sizing: border-box;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
@@ -163,20 +168,20 @@ input[type="text"] {
 input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="text"]:focus {
-    border-color: var(--primary-color);
+    border-color: var(--couleur-primaire);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     outline: none;
 }
 
 input[type="submit"] {
-    background-color: var(--primary-color);
+    background-color: var(--couleur-primaire);
     color: white;
     border: none;
     padding: 0.75rem;
-    border-radius: var(--border-radius);
+    border-radius: var(--taille-bordure);
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s, opacity 0.3s;
+    transition: couleur-de-fond 0.3s, opacity 0.3s;
 }
 
 
@@ -190,13 +195,13 @@ a.button {
     display: block;
     width: 100%;
     padding: 0.75rem;
-    margin-top: var(--spacing-unit);
+    margin-top: var(--espace);
     border: none;
-    border-radius: var(--border-radius);
+    background-color: var(--taille-bordure);
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s, opacity 0.3s;
+    transition: couleur-de-fond 0.3s, opacity 0.3s;
     box-sizing: border-box;
 }
