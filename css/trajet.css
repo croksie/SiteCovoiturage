@@ -2,56 +2,8 @@
     STYLE DES PAGES CREER TRAJET ET REJOINDRE TRAJET
 */
 
-/* Définition des variables */
-:root {
-    --couleur-primaire: #0f9c22;
-    --couleur-secondaire: #ece578fd;
-    --couleur-de-fond: #f8f9fa;
-    --fond-des-cartes: #ffffff;
-    --couleur-du-texte: #343a40;
-    --couleur-du-texte-clair: #6c757d;
-    --taille-bordure: 8px;
-    --espace: 1rem;
-}
-
 a.button {
     display: flex;
     justify-content: center;
 }
 
-input[type="radio"]{
-    display: none;
-}
-
-input[type="radio"] + label{
-    padding: 0.5rem 0rem;
-    width: 30%;
-    text-align: center;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-    color: #fff;
-    background-color: #6c757d;
-    border: 1px solid transparent;
-    transition: all 0.3s ease-in-out;
-}
-
-input[type="radio"].radioAller:hover + label{
-    background-color: #218838;
-    border-color: #1e7e34;
-}
-
-input[type="radio"].radioAller:checked + label{
-    background-color: var(--couleur-primaire);
-    border-color: var(--couleur-primaire);
-}
-
-input[type="radio"].radioRetour:hover + label{
-    background-color: #c82333;
-    border-color: #bd2130;
-}
-
-input[type="radio"].radioRetour:checked + label{
-    background-color: #dc3545;
-    border-color: #dc3545;
-}

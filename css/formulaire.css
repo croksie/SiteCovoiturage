@@ -1,0 +1,126 @@
+/*
+    STYLE DES PAGES AVEC UN FORMULAIRE ET/OU INPUT
+*/
+
+/* Définition des variables */
+:root {
+    --couleur-primaire: #0f9c22;
+    --couleur-secondaire: #ece578fd;
+    --couleur-de-fond: #f8f9fa;
+    --fond-des-cartes: #ffffff;
+    --couleur-du-texte: #343a40;
+    --couleur-du-texte-clair: #6c757d;
+    --taille-bordure: 8px;
+    --espace: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: var(--espace);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    margin-top: 0rem;
+    font-weight: 600;
+    color: var(--couleur-du-texte);
+    font-size: 0.95rem;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    border: 1px solid #ced4da;
+    background-color: var(--taille-bordure);
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: var(--couleur-primaire);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: var(--couleur-primaire);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: var(--taille-bordure);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: couleur-de-fond 0.3s, opacity 0.3s;
+}
+
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    line-height: 1.6;
+}
+
+input[type="datetime-local"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+input[type="file"]{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"] + label{
+    padding: 0.5rem 0rem;
+    width: 30%;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: #6c757d;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"].radioAller:hover + label,
+input[type="radio"].radioRetour:hover + label{
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+input[type="radio"].radioAller:checked + label,
+input[type="radio"].radioRetour:checked + label{
+    background-color: var(--couleur-primaire);
+    border-color: var(--couleur-primaire);
+}
