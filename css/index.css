@@ -30,6 +30,14 @@ nav > a.button {
     box-sizing: border-box;
 }
 
+#divRecherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: var(--espace);
+}
+
 #recherche{
     display: flex;
     flex-direction: column;
@@ -55,12 +63,25 @@ nav > a.button {
     justify-content: space-around;
 }
 
-select,
-select::picker(select) {
-    appearance: base-select;
+select {
     color: var(--couleur-primaire);
     border-radius: var(--taille-bordure);
-    padding: 0.1rem 1rem 0.1rem 1rem;
+    padding: 0.5rem 1rem;
     width: 50%;
     margin: 0.2rem;
+    
+    /*Pour Firefox qui supporte pas ::picker*/
+    appearance: none;
+    background-color: white;
+    border: 1px solid #767676;
+    
+}
+
+/* Pour Chrome Edge OperaGX, remplace par base-select */
+@supports (appearance: base-select) {
+    select,
+    select::picker(select) {
+        appearance: base-select;
+        padding: 0.1rem 1rem;
+    }
 }
