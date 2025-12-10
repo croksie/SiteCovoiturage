@@ -30,12 +30,25 @@ nav > a.button {
     box-sizing: border-box;
 }
 
-#divRecherche {
+.divRecherche {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     margin-bottom: var(--espace);
+
+}
+
+.loupe{
+    width: 30px;
+    border: 0.2rem solid var(--couleur-primaire);
+    border-radius: 0.3rem;
+    padding: 0.3rem;    
+    transition: all 0.3s ease-in-out;
+}
+
+.loupe:hover{
+    background-color: var(--couleur-primaire);
 }
 
 #recherche{
