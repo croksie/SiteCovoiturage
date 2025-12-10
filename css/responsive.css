@@ -1,0 +1,11 @@
+/*
+    STYLE RESPONSIVE POUR LES PAGES
+*/
+
+@media (max-width: 768px) {
+    nav > a.button {
+        padding: 0.6rem 1rem;
+        margin: 0.5rem 0.5rem;
+        text-align: center;
+    }
+}
