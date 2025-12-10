@@ -67,6 +67,8 @@ nav > a.button {
     color: var(--couleur-du-texte);
 }
 
+
+
 .filtres{
     display: flex;
     justify-content: space-around;

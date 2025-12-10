@@ -2,6 +2,24 @@
     STYLE DES PAGES CONNEXION / INSCRIPTION ET RESET MDP
 */
 
+main{
+    position: relative;
+}
+
+/* ajoute l'image puis floute avant tout pour éviter de flouter tout le contenu de la page*/
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/parking.jpg');
+  background-size: cover;
+  filter: blur(8px);
+  z-index: -1;
+}
+
 a.button {
     display: flex;
     justify-content: center;
@@ -22,7 +40,6 @@ input[type="radio"] + label{
     color: #fff;
     background-color: #6c757d;
     border: 1px solid transparent;
-
 }
 
 input[type="radio"].radioConducteur:hover + label{
