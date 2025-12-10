@@ -72,7 +72,6 @@ header > div {
     display: flex;
     flex-direction: row; 
     width: 100%; 
-    gap: var(--espace);
     align-items: center;
     justify-content: space-between; 
 }
