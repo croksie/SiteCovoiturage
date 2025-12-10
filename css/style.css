@@ -55,7 +55,7 @@ header {
     padding: 0rem;
     flex-direction: column;
     align-items: center;
-    padding: var(--espace);
+    padding: 0.5rem;
 }
 
 /* Contenue interne de l'header */
