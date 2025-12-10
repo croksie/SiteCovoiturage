@@ -6,6 +6,7 @@
     <title>Inscription - Covoit'Info@Castres</title>
     <link rel="stylesheet" href="./css/style.css">    
     <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/trajet.css">
 </head>
 <body>
     <header>
@@ -18,12 +19,28 @@
         <h1>Inscription</h1>
         <div class="carte">
             <form action="index.html">
-                <label for="inputEmailInscription">Email</label>
+                 <div class="radio">                    
+                    <input type="radio" id="radioConducteurInscription" class="radioconducteur" name="radioInscription" value="Conducteur"/>
+                    <label for="radioConducteurInscription">Conducteur</label>
+                    
+                    <input type="radio" id="radioPassagerInscription" class="radioconducteur" name="radioInscription" value="Passager" checked/>
+                    <label for="radioPassagerInscription">Passager</label>
+                </div>
+                <label for="inputPrenomInscription">Prénom*</label>
+                <input type="text" name="inputPrenomInscription" id="inputPrenomInscription">
+
+                <label for="inputNomInscription">Nom*</label>
+                <input type="text" name="inputNomInscription" id="inputNomInscription">
+                
+                <label for="inputEmailInscription">Email*</label>
                 <input type="email" name="emailInscription" id="inputEmailInscription">
 
-                <label for="inputMdpInscription">Mot de passe</label>
+                <label for="inputMdpInscription">Mot de passe*</label>
                 <input type="password" name="mdpInscription" id="inputMdpInscription">
                 
+                <label for="ciInscription">Veuillez joindre votre carte d'identité recto/verso</label>
+                <input type="file" name="ciInscription" id="ciInscription">
+
                 <input type="submit" value="S'inscrire"></input>
             </form>
             <a href="./connexion.html" class="button">J'ai déjà un compte</a>

@@ -133,9 +133,11 @@ footer {
     border-radius: var(--taille-bordure);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
+    max-width: 700px;
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
