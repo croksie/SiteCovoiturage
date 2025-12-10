@@ -45,12 +45,12 @@ main {
 header {
     z-index: 1000;
     height: auto;
-    background-color: var(--card-background);
+    background-color: var(--fond-des-cartes);
     border-bottom: 1px solid #e9ecef;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--spacing-unit);
+    padding: var(--espace);
     width: 100%;
 }
 
@@ -72,7 +72,7 @@ header > div {
     display: flex;
     flex-direction: row; 
     width: 100%; 
-    gap: var(--spacing-unit);
+    gap: var(--espace);
     align-items: center;
     justify-content: space-between; 
 }
@@ -85,7 +85,7 @@ header > div > img {
 
 header > div > span {
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--couleur-primaire);
     font-size: 1.2rem;
     margin-right: 0; 
 }
@@ -103,7 +103,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    gap: var(--spacing-unit);
+    gap: var(--espace);
     align-items: stretch;
 }
 
@@ -164,12 +164,11 @@ ul {
 
 
 li {
-
-    width: 95%;
+    width: 100%;
     max-width: 400px;
-
-    margin-top: var(--spacing-unit);
+    margin-top: var(--espace);
     padding: 0;
+
 }
 
 
@@ -182,7 +181,7 @@ li {
     margin-top: var(--espace);
     outline: none;
     text-decoration: none;
-        width: 100%;
+    width: 100%;
     color: var(--couleur-du-texte);
 }
 
@@ -253,16 +252,16 @@ input[type="datetime-local"] {
     padding: 0.75rem;
     margin-bottom: 0.5rem;
     border: 1px solid #ced4da;
-    border-radius: var(--border-radius);
+    border-radius: var(--taille-bordure);
     box-sizing: border-box;
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--couleur-du-texte);
     transition: border-color 0.3s, box-shadow 0.3s;
     line-height: 1.6;
 }
 
 input[type="datetime-local"]:focus {
-    border-color: var(--primary-color);
+    border-color: var(--couleur-primaire);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     outline: none;
 }
