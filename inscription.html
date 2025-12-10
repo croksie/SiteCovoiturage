@@ -21,7 +21,7 @@
         <div class="carte">
             <h1>Inscription</h1>
             <h4>* Indique une réponse obligatoire</h4>
-            
+
             <form action="index.html">
                  <div class="radio">                    
                     <input type="radio" id="radioConducteurInscription" class="radioAller" name="radioInscription" value="Conducteur"/>
@@ -31,19 +31,19 @@
                     <label for="radioPassagerInscription">Passager</label>
                 </div>
                 <label for="inputPrenomInscription">Prénom*</label>
-                <input type="text" name="inputPrenomInscription" id="inputPrenomInscription">
+                <input type="text" name="inputPrenomInscription" id="inputPrenomInscription" required>
 
                 <label for="inputNomInscription">Nom*</label>
-                <input type="text" name="inputNomInscription" id="inputNomInscription">
+                <input type="text" name="inputNomInscription" id="inputNomInscription" required>
                 
                 <label for="inputEmailInscription">Email*</label>
-                <input type="email" name="emailInscription" id="inputEmailInscription">
+                <input type="email" name="emailInscription" id="inputEmailInscription" required>
 
                 <label for="inputMdpInscription">Mot de passe*</label>
-                <input type="password" name="mdpInscription" id="inputMdpInscription">
+                <input type="password" name="mdpInscription" id="inputMdpInscription" required>
                 
                 <label for="ciInscription">Veuillez joindre votre carte d'identité recto/verso*</label>
-                <input type="file" name="ciInscription" id="ciInscription">
+                <input type="file" name="ciInscription" id="ciInscription" required>
 
                 <input type="submit" value="S'inscrire"></input>
             </form>
