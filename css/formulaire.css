@@ -55,7 +55,7 @@ input[type="text"] {
     margin-bottom: 0.5rem;
     margin-top: 0rem;
     border: 1px solid #ced4da;
-    background-color: var(--taille-bordure);
+    background-color: var(--fond-des-cartes);
     box-sizing: border-box;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
