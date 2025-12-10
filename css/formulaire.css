@@ -113,8 +113,8 @@ input[type="radio"] + label{
     transition: all 0.3s ease-in-out;
 }
 
-input[type="radio"].radioAller:hover + label,
-input[type="radio"].radioRetour:hover + label{
+input[type="radio"].radioAller:not(:disabled):hover + label,
+input[type="radio"].radioRetour:not(:disabled):hover + label{
     background-color: #218838;
     border-color: #1e7e34;
 }
