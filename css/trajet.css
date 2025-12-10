@@ -10,3 +10,21 @@ a.button {
 #h2Liste{
     text-align: center;
 }
+
+main{
+    position: relative;
+}
+
+/* ajoute l'image puis floute avant tout pour éviter de flouter tout le contenu de la page*/
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/parking-vide.jpg');
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
