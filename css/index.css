@@ -18,8 +18,8 @@
 nav > a.button {
     color: var(--fond-des-cartes);
     display: flex;
-    justify-content: space-between;
-    padding: 0.2rem 2rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
     border-radius: 2rem;
     margin: 0.5rem 1rem;
     background-color: var(--couleur-primaire);
@@ -27,7 +27,6 @@ nav > a.button {
     cursor: pointer;
     text-align: center;    
     text-decoration: none;
-    box-sizing: border-box;
 }
 
 .divRecherche {
@@ -63,9 +62,6 @@ nav > a.button {
     border-radius: var(--taille-bordure);
     box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
     margin-top: var(--espace);
-}
-
-.trajet > a{
     outline: none;
     text-decoration: none;
     color: var(--couleur-du-texte);

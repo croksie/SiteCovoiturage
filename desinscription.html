@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=head, initial-scale=1.0">
-    <title>Réinitialiser le mot de passe</title>
+    <title>Désinscription</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/auth.css">
 </head>
@@ -16,14 +16,17 @@
         </div>
     </header>
     <main>
-        <h1>Réinitialiser le mot de passe</h1>
+        <h1>Désinscription</h1>
         <div class="carte">
             <h4>* Indique une réponse obligatoire</h4>
             <form action="connexion.html">
-                <label for="inputEmailReset">Email*</label>
-                <input type="email" name="emailMdp" id="inputEmailReset">
+                <label for="inputEmailDesinscription">Email*</label>
+                <input type="email" name="emailReset" id="inputEmailDesinscription">
+
+                <label for="inputMdpReset">Mot de passe*</label>
+                <input type="password" name="mdpReset" id="inputMdpReset">
                 
-                <input type="submit" value="Envoyer un email de récupération"></input>
+                <input type="submit" value="Se désinscrire"></input>
             </form>
             <a href="./connexion.html" class="button">Retour</a>
         </div>
