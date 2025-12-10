@@ -134,7 +134,7 @@ footer {
 
 .carte {
     background-color: var(--fond-des-cartes);
-    padding: 1.2rem;
+    padding: 1.5rem;
     border-radius: var(--taille-bordure);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -148,8 +148,12 @@ footer {
 h1 {
     color: var(--couleur-primaire);
     text-align: center;
-
     font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 ul {
@@ -190,78 +194,4 @@ li {
     outline: none;
     text-decoration: none;
     color: var(--couleur-du-texte);
-}
-
-/* Formulaire */
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--espace);
-    margin-bottom: var(--espace);
-}
-
-label {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-weight: 600;
-    color: var(--couleur-du-texte);
-    font-size: 0.95rem;
-}
-
-.radio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #ced4da;
-    background-color: var(--taille-bordure);
-    box-sizing: border-box;
-    font-size: 1rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus {
-    border-color: var(--couleur-primaire);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    outline: none;
-}
-
-input[type="submit"] {
-    background-color: var(--couleur-primaire);
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: var(--taille-bordure);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: couleur-de-fond 0.3s, opacity 0.3s;
-}
-
-input[type="datetime-local"] {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #ced4da;
-    border-radius: var(--taille-bordure);
-    box-sizing: border-box;
-    font-size: 1rem;
-    color: var(--couleur-du-texte);
-    transition: border-color 0.3s, box-shadow 0.3s;
-    line-height: 1.6;
-}
-
-input[type="datetime-local"]:focus {
-    border-color: var(--couleur-primaire);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    outline: none;
 }
