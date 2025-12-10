@@ -58,6 +58,7 @@ header {
 header > img {
     height: 50px;
 }
+
 .header-inner {
     width: 100%;
     max-width: 1200px;
