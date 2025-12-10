@@ -4,7 +4,7 @@
 
 /* Définition des variables */
 :root {
-    --couleur-primaire: #0f9c22;
+    --couleur-primaire: #1A8931;
     --couleur-secondaire: #ece578fd;
     --couleur-de-fond: #f8f9fa;
     --fond-des-cartes: #ffffff;
@@ -23,6 +23,7 @@ nav > a.button {
     border-radius: 2rem;
     margin: 0.5rem 1rem;
     background-color: var(--couleur-primaire);
+    color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
     text-align: center;    
