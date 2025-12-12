@@ -90,7 +90,7 @@ select {
     
 }
 
-/* Pour Chrome Edge OperaGX, remplace par base-select W3C renvoit une erreur car base-select et ::picker() sont des fonctionnalités expérimentales */
+/* Pour Chrome et chromium en général, remplace par base-select W3C renvoit une erreur car base-select et ::picker() sont des fonctionnalités expérimentales */
 @supports (appearance: base-select) {
     select,
     select::picker(select) {

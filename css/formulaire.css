@@ -53,16 +53,13 @@ input[type="text"] {
     margin-top: 0rem;
     border: 1px solid #ced4da;
     background-color: var(--fond-des-cartes);
-    box-sizing: border-box;
     font-size: 1rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="text"]:focus {
     border-color: var(--couleur-primaire);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     outline: none;
 }
 
@@ -82,16 +79,13 @@ input[type="datetime-local"] {
     margin-bottom: 0.5rem;
     border: 1px solid #ced4da;
     border-radius: var(--border-radius);
-    box-sizing: border-box;
     font-size: 1rem;
     color: var(--text-color);
-    transition: border-color 0.3s, box-shadow 0.3s;
-    line-height: 1.6;
+
 }
 
 input[type="datetime-local"]:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     outline: none;
 }
 
@@ -112,7 +106,6 @@ input[type="radio"] + label{
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    line-height: 1.5;
     border-radius: 0.3rem;
     color: #fff;
     background-color: #6c757d;
