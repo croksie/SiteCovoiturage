@@ -2,14 +2,9 @@
     STYLE PRINCIPALE DE LA PAGE 
 */
 
-* {
-    box-sizing: border-box;
-}
-
 /* Définition des variables */
 :root {
     --couleur-primaire: #1A8931;
-    --couleur-secondaire: #ece578fd;
     --couleur-de-fond: #f8f9fa;
     --fond-des-cartes: #ffffff;
     --couleur-du-texte: #343a40;
@@ -18,6 +13,9 @@
     --espace: 1rem;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 /* Mise en page principal */
 

@@ -5,11 +5,7 @@
 /* Définition des variables */
 :root {
     --couleur-primaire: #1A8931;
-    --couleur-secondaire: #ece578fd;
-    --couleur-de-fond: #f8f9fa;
     --fond-des-cartes: #ffffff;
-    --couleur-du-texte: #343a40;
-    --couleur-du-texte-clair: #6c757d;
     --taille-bordure: 8px;
     --espace: 1rem;
 }
